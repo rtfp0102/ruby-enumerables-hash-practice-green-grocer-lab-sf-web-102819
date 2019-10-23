@@ -47,7 +47,7 @@ def checkout(cart, coupons)
   cart_w_clearance = apply_clearance(cart_w_coupons)
   
   cart_w_clearance.each do |item, values|
-    cost += (values[:price] * values[:cout])
+    cost += (values[:price] * values[:count])
   end
   
   if cost > 100
